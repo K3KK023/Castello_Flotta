@@ -5,14 +5,12 @@
   height: 94px;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 20px;
   position: relative;
   background-color: #ffffff;
 }
 
 .MAKERS-NAVIGATION .container {
   display: flex;
-  max-width: 1100px;
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -47,12 +45,15 @@
 
 .MAKERS-MAIN .container {
     display: flex;
-    width: 1200px;
+    width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
     flex: 0 0 auto;
-}
+    background: rgba(119, 205, 211, 0.568);
+    border-radius: 25px;
+    padding: 10px 0 10px 0;
+  }
 
 .MAKERS-MAIN .text-side {
     display: flex;
@@ -93,14 +94,14 @@
     font-family: "Inter-Regular", Helvetica;
     font-weight: 400;
     color: #0a2942;
-    font-size: 16px;
+    font-size: 23px;
     letter-spacing: 0;
     line-height: 24px;
 }
 
 .MAKERS-MAIN .image-side {
     display: flex;
-    width: 660px;
+    width: 65%;
     height: 519px;
     align-items: center;
     justify-content: center;
@@ -109,30 +110,29 @@
 }
 
 .MAKERS-MAIN .image {
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    flex-grow: 1;
-    background-image: url(./img/image.png);
-    background-size: cover;
-    background-position: 50% 50%;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  background-image: url(img/hro.png);
+  background-size: cover; /* Riempie il contenitore mantenendo le proporzioni */
+  background-position: 50% 50%;
+  border-radius: 25px;
 }
 
 /*story*/
 .MAKERS-STORY {
   display: flex;
   flex-direction: column;
-  width: 1440px;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 0px 20px;
   position: relative;
   background-color: #ffffff;
 }
 
 .MAKERS-STORY .container {
   display: flex;
-  width: 1200px;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -145,7 +145,7 @@
   width: 500px;
   align-items: flex-start;
   gap: 24px;
-  padding: 10px;
+  padding: 10px 10px 10px 110px;
   position: relative;
 }
 
@@ -178,14 +178,14 @@
   font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
   color: #0a2942;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: 24px;
 }
 
 /*cta*/
 .MAKERS-FEATURES {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
@@ -194,10 +194,9 @@
 .MAKERS-FEATURES .content-wrapper {
   display: flex;
   flex-direction: column;
-  width: 1440px;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 0px 20px;
   position: relative;
   flex: 0 0 auto;
   background-color: #ffffff;
@@ -218,9 +217,9 @@
 
 .MAKERS-FEATURES .features-grid {
   display: flex;
-  width: 1100px;
+  width: 100%;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
   position: relative;
   flex: 0 0 auto;
 }
@@ -237,7 +236,7 @@
 .MAKERS-FEATURES .text-wrapper {
   position: relative;
   align-self: stretch;
-  margin-top: -1px;
+  margin-top: 10px;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   color: #000000;
@@ -265,7 +264,7 @@
   padding: 8px;
   position: relative;
   flex: 0 0 auto;
-  background-color: #2abda3;
+  background-color: #5ed1da;
   border-radius: 6px;
 }
 
@@ -324,20 +323,19 @@
 .MAKERS-FOOTER {
   display: flex;
   flex-direction: column;
-  width: 1440px;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 0px 20px;
   position: relative;
   background-color: #ffffff;
 }
 
 .MAKERS-FOOTER .container {
   display: flex;
-  width: 1000px;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 0px;
+  padding: 12px 0px;
   position: relative;
   flex: 0 0 auto;
 }
