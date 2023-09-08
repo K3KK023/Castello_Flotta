@@ -49,7 +49,7 @@
     justify-content: space-around;
     position: relative;
     flex: 0 0 auto;
-    background: rgba(119, 205, 211, 0.568);
+    background: #5ed1da;
     border-radius: 25px;
     padding: 10px 0 10px 0;
   }
@@ -380,8 +380,8 @@
 }
 
 
-
-@media screen and (max-width: 1060px) {
+/*tab*/
+@media screen and (max-width: 1061px) {
 /* Navbar */
 .MAKERS-NAVIGATION {
   width: fit-content;
@@ -425,7 +425,7 @@
   width: 100%;
   align-items: center;
   position: relative;
-  background: rgba(119, 205, 211, 0.568);
+  background: #5ed1da;
   border-radius: 25px;
   padding: 10px 0 10px 0;
 }
@@ -500,7 +500,7 @@
   display: flex;
   flex-wrap: wrap;
   height: 300px;
-  width: fit-content;
+  width: 90%;
   align-items: center;
   justify-content: center;
   gap: 0px 0px;
@@ -573,7 +573,7 @@
 .MAKERS-FEATURES {
   display: flex;
   flex-wrap: wrap;
-  height: 945px;
+  height: auto;
   align-items: center;
   justify-content: center;
   gap: 0px 0px;
@@ -586,19 +586,19 @@
   align-items: center;
   justify-content: center;
   padding: 0px 20px;
-  width: fit-content;
   position: relative;
   flex: 1;
   flex-grow: 1;
   margin-top: -20.5px;
   margin-bottom: -20.5px;
   background-color: #ffffff;
+  width: auto;
 }
 
 .MAKERS-FEATURES .content {
   display: flex;
   flex-direction: column;
-  width: 591px;
+  width: 100%;
   align-items: center;
   justify-content: center;
   padding: 64px 0px;
@@ -609,14 +609,14 @@
 
 .MAKERS-FEATURES .features-grid {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
   gap: 16px 16px;
   position: relative;
   align-self: stretch;
-  width: 100%;
+  width: 90%;
   flex: 0 0 auto;
+  flex-direction: column;
 }
 
 .MAKERS-FEATURES .media-objects {
@@ -717,7 +717,347 @@
 }
 
 
+/*mobile*/
+@media screen and (max-width: 650px) {
+  /* Navbar */
+.MAKERS-NAVIGATION {
+  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  gap: 0px 0px;
+  padding: 0px 20px;
+  position: relative;
+  background-color: #ffffff;
+}
 
-@media screen and (min-width: 768px){
+.MAKERS-NAVIGATION .left {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+}
+
+.MAKERS-NAVIGATION .icon img {
+  position: relative;
+  height: 120px; 
+  width: auto; 
+}
+
+/*hero*/
+.MAKERS-MAIN {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0px 0px;
+  padding: 0px 20px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.MAKERS-MAIN .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  background: #5ed1da;
+  border-radius: 25px;
+  padding: 10px 0 10px 0;
+}
+
+.MAKERS-MAIN .text-side {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  align-items: center;
+  gap: 24px;
+  padding: 10px;
+  position: relative;
+}
+
+.MAKERS-MAIN .MAKERS-TEXT-CONTENT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+}
+
+.MAKERS-MAIN .learn-how-to-make {
+  position: relative;
+  align-self: center;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.MAKERS-MAIN .makers-is-a-figma {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #0a2942;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.MAKERS-MAIN .image-side {
+  display: none;
+}
+
+/*story*/
+.MAKERS-STORY {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0px 0px;
+  padding: 0px 20px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.MAKERS-STORY .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px 24px;
+  padding: 20px 0px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.MAKERS-STORY .text-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 10px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.MAKERS-STORY .MAKERS-TEXT-CONTENT {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.MAKERS-STORY .learn-how-to-make {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.MAKERS-STORY .makers-is-a-figma {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #0a2942;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 34.5px;
+}
+
+/*cta*/
+.MAKERS-FEATURES {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0px 0px;
+  position: relative;
+}
+
+.MAKERS-FEATURES .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: #ffffff;
+}
+
+.MAKERS-FEATURES .content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0px 0px;
+  padding: 64px 0px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-left: -20px;
+  margin-right: -20px;
+  background-color: #ffffff;
+}
+
+.MAKERS-FEATURES .features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px 16px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.MAKERS-FEATURES .media-objects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 340px;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 32px 32px;
+  position: relative;
+}
+
+.MAKERS-FEATURES .text-wrapper {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.MAKERS-FEATURES .div {
+  flex-direction: column;
+  width: 340px;
+  gap: 32px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.MAKERS-FEATURES .MAKERS-MEDIA-OBJECT {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.MAKERS-FEATURES .media {
+  width: 199px;
+  height: 198px;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+  background-color: #5ed1da;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.MAKERS-FEATURES .MAKERS-SOCIAL-MEDIA {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.MAKERS-FEATURES .p {
+ display: none;
+}
+
+.MAKERS-FEATURES .call-to-action {
+display: none;
+}
+
+/*footer*/
+.MAKERS-FOOTER {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.MAKERS-FOOTER .container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.MAKERS-FOOTER .copyright {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+}
+
+.MAKERS-FOOTER .text-wrapper {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #678398;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.MAKERS-FOOTER .social-media {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+}
+
+.MAKERS-FOOTER .MAKERS-SOCIAL-MEDIA {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
 
 }
