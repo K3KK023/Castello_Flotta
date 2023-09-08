@@ -29,13 +29,12 @@
 .MAKERS-NAVIGATION .icon img {
   height: 120px; 
   width: auto; 
-}S
+}
 
 /*hero*/
 .MAKERS-MAIN {
     display: flex;
     flex-direction: column;
-    width: 1440px;
     align-items: center;
     justify-content: center;
     padding: 0px 20px;
@@ -117,6 +116,7 @@
   background-size: cover; /* Riempie il contenitore mantenendo le proporzioni */
   background-position: 50% 50%;
   border-radius: 25px;
+  margin: 4px;
 }
 
 /*story*/
@@ -217,9 +217,9 @@
 
 .MAKERS-FEATURES .features-grid {
   display: flex;
-  width: 100%;
-  align-items: flex-start;
+  flex-wrap: wrap;
   justify-content: space-around;
+  align-items: flex-start;
   position: relative;
   flex: 0 0 auto;
 }
@@ -237,6 +237,401 @@
   position: relative;
   align-self: stretch;
   margin-top: 10px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.MAKERS-FEATURES .MAKERS-MEDIA-OBJECT {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.MAKERS-FEATURES .media {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #5ed1da;
+  border-radius: 6px;
+}
+
+.MAKERS-FEATURES .media img {
+  vertical-align: middle;
+}
+
+.MAKERS-FEATURES .MAKERS-SOCIAL-MEDIA {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.MAKERS-FEATURES .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.MAKERS-FEATURES .div {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.MAKERS-FEATURES .p {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #0a2942;
+  letter-spacing: 0;
+}
+
+.MAKERS-FEATURES .call-to-action {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #0249ff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+/*footer*/
+.MAKERS-FOOTER {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.MAKERS-FOOTER .container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.MAKERS-FOOTER .copyright {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+}
+
+.MAKERS-FOOTER .text-wrapper {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #678398;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.MAKERS-FOOTER .social-media {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+}
+
+.MAKERS-FOOTER .MAKERS-SOCIAL-MEDIA {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+
+
+@media screen and (max-width: 1060px) {
+/* Navbar */
+.MAKERS-NAVIGATION {
+  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  gap: 0px 0px;
+  padding: 0px 20px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.MAKERS-NAVIGATION .left {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+}
+
+.MAKERS-NAVIGATION .icon img {
+  position: relative;
+  height: 120px; 
+  width: auto; 
+}
+
+/*hero*/
+.MAKERS-MAIN {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0px 0px;
+  padding: 0px 20px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.MAKERS-MAIN .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  background: rgba(119, 205, 211, 0.568);
+  border-radius: 25px;
+  padding: 10px 0 10px 0;
+}
+
+.MAKERS-MAIN .text-side {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 10px;
+  position: relative;
+}
+
+.MAKERS-MAIN .MAKERS-TEXT-CONTENT {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.MAKERS-MAIN .learn-how-to-make {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.MAKERS-MAIN .makers-is-a-figma {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #0a2942;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.MAKERS-MAIN .image-side {
+  display: flex;
+  width: 65%;
+  height: 519px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  margin-left: -50px;
+}
+
+.MAKERS-MAIN .image {
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  background-image: url(img/hro.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/*story*/
+.MAKERS-STORY {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  gap: 0px 0px;
+  padding: 0px 20px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.MAKERS-STORY .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px 24px;
+  padding: 20px 0px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.MAKERS-STORY .text-side {
+  display: flex;
+  flex-direction: column;
+  height: 126px;
+  align-items: center;
+  gap: 24px;
+  padding: 10px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.MAKERS-STORY .MAKERS-TEXT-CONTENT {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  margin-bottom: -11px;
+}
+
+.MAKERS-STORY .learn-how-to-make {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.MAKERS-STORY .makers-is-a-figma {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #0a2942;
+  font-size: 23px;
+  letter-spacing: 0;
+  line-height: 34.5px;
+}
+
+
+/*cta*/
+.MAKERS-FEATURES {
+  display: flex;
+  flex-wrap: wrap;
+  height: 945px;
+  align-items: center;
+  justify-content: center;
+  gap: 0px 0px;
+  position: relative;
+}
+
+.MAKERS-FEATURES .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  width: fit-content;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  margin-top: -20.5px;
+  margin-bottom: -20.5px;
+  background-color: #ffffff;
+}
+
+.MAKERS-FEATURES .content {
+  display: flex;
+  flex-direction: column;
+  width: 591px;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 0px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+}
+
+.MAKERS-FEATURES .features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.MAKERS-FEATURES .media-objects {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+}
+
+.MAKERS-FEATURES .text-wrapper {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   color: #000000;
@@ -319,60 +714,10 @@
   line-height: 21px;
 }
 
-/*footer*/
-.MAKERS-FOOTER {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background-color: #ffffff;
 }
 
-.MAKERS-FOOTER .container {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 0px;
-  position: relative;
-  flex: 0 0 auto;
-}
 
-.MAKERS-FOOTER .copyright {
-  display: flex;
-  width: 500px;
-  align-items: center;
-  gap: 16px;
-  position: relative;
-  align-self: stretch;
-}
 
-.MAKERS-FOOTER .text-wrapper {
-  position: relative;
-  width: fit-content;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #678398;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-}
+@media screen and (min-width: 768px){
 
-.MAKERS-FOOTER .social-media {
-  display: flex;
-  width: 500px;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 24px;
-  position: relative;
-  align-self: stretch;
-}
-
-.MAKERS-FOOTER .MAKERS-SOCIAL-MEDIA {
-  position: relative;
-  width: 24px;
-  height: 24px;
 }
