@@ -628,7 +628,7 @@
   flex-direction: column;
   width: 340px;
   align-items: flex-start;
-  gap: 32px;
+  gap: 16px;
   position: relative;
 }
 
@@ -663,7 +663,7 @@
   padding: 8px;
   position: relative;
   flex: 0 0 auto;
-  background-color: #5ed1da;
+  background-color: var(--primary-color);
   border-radius: 6px;
 }
 
@@ -677,7 +677,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: 1px;
   position: relative;
   align-self: stretch;
   width: 100%;
@@ -914,7 +914,7 @@
   width: 340px;
   align-items: flex-start;
   justify-content: space-around;
-  gap: 32px 32px;
+  gap: 16px 32px;
   position: relative;
 }
 
