@@ -132,11 +132,14 @@
 
 .MAKERS-STORY .container {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px 24px;
+  padding: 20px 0px;
   position: relative;
-  flex: 0 0 auto;
+  flex: 1;
+  flex-grow: 1;
 }
 
 .MAKERS-STORY .text-side {
@@ -145,7 +148,7 @@
   width: 500px;
   align-items: flex-start;
   gap: 24px;
-  padding: 10px 10px 10px 110px;
+  padding: 10px;
   position: relative;
 }
 
@@ -180,7 +183,7 @@
   color: #0a2942;
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 /*cta*/
@@ -380,6 +383,16 @@
   height: 24px;
 }
 
+.ppcptc {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  background: rgb(75, 75, 75);
+  width: auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
 
 /*tab*/
 @media screen and (max-width: 1061px) {
@@ -508,30 +521,17 @@
   padding: 0px 20px;
   position: relative;
   background-color: #ffffff;
+  margin-bottom: 15%;
+  margin-top: 15%;
 }
 
 .MAKERS-STORY .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 24px 24px;
-  padding: 20px 0px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
+  padding: 20px 20px;
 }
 
 .MAKERS-STORY .text-side {
-  display: flex;
-  flex-direction: column;
-  height: 126px;
-  align-items: center;
-  gap: 24px;
+  width: 100%;
   padding: 10px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
 }
 
 .MAKERS-STORY .MAKERS-TEXT-CONTENT {
@@ -559,13 +559,7 @@
 }
 
 .MAKERS-STORY .makers-is-a-figma {
-  position: relative;
-  align-self: stretch;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #0a2942;
-  font-size: 23px;
-  letter-spacing: 0;
+  font-size: 25px;
   line-height: 34.5px;
 }
 
@@ -825,29 +819,17 @@
   padding: 0px 20px;
   position: relative;
   background-color: #ffffff;
+  margin-bottom: 15%;
+  margin-top: 15%;
 }
 
 .MAKERS-STORY .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 24px 24px;
-  padding: 20px 0px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
+  gap: 16px 16px;
 }
 
 .MAKERS-STORY .text-side {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
+  width: 100%;
   padding: 10px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
 }
 
 .MAKERS-STORY .MAKERS-TEXT-CONTENT {
@@ -862,26 +844,12 @@
 }
 
 .MAKERS-STORY .learn-how-to-make {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 48px;
-  letter-spacing: 0;
-  line-height: normal;
+  font-size: 32px;
 }
 
 .MAKERS-STORY .makers-is-a-figma {
-  position: relative;
-  align-self: stretch;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #0a2942;
-  font-size: 25px;
-  letter-spacing: 0;
-  line-height: 34.5px;
+  font-size: 20px;
+  line-height: 22px;
 }
 
 /*cta*/
@@ -977,8 +945,8 @@
 }
 
 .MAKERS-FEATURES .media {
-  width: 199px;
-  height: 198px;
+  width: 100px;
+  height: 100px;
   justify-content: center;
   gap: 10px;
   padding: 8px;
@@ -991,8 +959,6 @@
 
 .MAKERS-FEATURES .MAKERS-SOCIAL-MEDIA {
   position: relative;
-  width: fit-content;
-  height: fit-content;
 }
 
 .MAKERS-FEATURES .p {
