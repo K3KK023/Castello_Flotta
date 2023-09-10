@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #83bce2;
+}
+
+
+.iubenda-tp-btn iubenda-cs-preferences-link{
+  display: none;
+}
+
 /* Navbar */
 .MAKERS-NAVIGATION {
   display: flex;
@@ -49,7 +58,7 @@
     justify-content: space-around;
     position: relative;
     flex: 0 0 auto;
-    background: #5ed1da;
+    background-color: var(--primary-color);
     border-radius: 25px;
     padding: 10px 0 10px 0;
   }
@@ -85,6 +94,7 @@
     font-size: 48px;
     letter-spacing: 0;
     line-height: normal;
+    text-align: center;
 }
 
 .MAKERS-MAIN .makers-is-a-figma {
@@ -96,6 +106,7 @@
     font-size: 23px;
     letter-spacing: 0;
     line-height: 24px;
+    text-align: center;
 }
 
 .MAKERS-MAIN .image-side {
@@ -113,7 +124,7 @@
   flex: 1;
   align-self: stretch;
   background-image: url(img/hro.png);
-  background-size: cover; /* Riempie il contenitore mantenendo le proporzioni */
+  background-size: cover;
   background-position: 50% 50%;
   border-radius: 25px;
   margin: 4px;
@@ -128,6 +139,7 @@
   justify-content: center;
   position: relative;
   background-color: #ffffff;
+  z-index: 1;
 }
 
 .MAKERS-STORY .container {
@@ -145,7 +157,7 @@
 .MAKERS-STORY .text-side {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 90%;
   align-items: flex-start;
   gap: 24px;
   padding: 10px;
@@ -192,6 +204,8 @@
   flex-direction: column;
   align-items: flex-start;
   position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .MAKERS-FEATURES .content-wrapper {
@@ -208,9 +222,7 @@
 .MAKERS-FEATURES .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 64px 0px;
+  padding: 25px 0px;
   position: relative;
   align-self: stretch;
   width: 100%;
@@ -267,7 +279,7 @@
   padding: 8px;
   position: relative;
   flex: 0 0 auto;
-  background-color: #5ed1da;
+  background-color: var(--primary-color);
   border-radius: 6px;
 }
 
@@ -352,6 +364,7 @@
   gap: 16px;
   position: relative;
   align-self: stretch;
+  padding-left: 15px;
 }
 
 .MAKERS-FOOTER .text-wrapper {
@@ -383,15 +396,13 @@
   height: 24px;
 }
 
-.ppcptc {
-  color: #ffffff;
-  text-decoration: none;
-  text-align: center;
-  background: rgb(75, 75, 75);
-  width: auto;
-  padding: 10px 20px;
-  border-radius: 10px;
-  display: inline-block;
+.ppcptc{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2%;
+  flex: 1 1 calc(50% - 10px);
+  margin: 5px;
+  flex-wrap: wrap;
 }
 
 /*tab*/
@@ -439,7 +450,7 @@
   width: 100%;
   align-items: center;
   position: relative;
-  background: #5ed1da;
+  background-color: var(--primary-color);
   border-radius: 25px;
   padding: 10px 0 10px 0;
 }
@@ -513,7 +524,6 @@
 .MAKERS-STORY {
   display: flex;
   flex-wrap: wrap;
-  height: 300px;
   width: 90%;
   align-items: center;
   justify-content: center;
@@ -521,8 +531,7 @@
   padding: 0px 20px;
   position: relative;
   background-color: #ffffff;
-  margin-bottom: 15%;
-  margin-top: 15%;
+  z-index: 1;
 }
 
 .MAKERS-STORY .container {
@@ -757,7 +766,7 @@
   width: 100%;
   align-items: center;
   position: relative;
-  background: #5ed1da;
+  background-color: var(--primary-color);
   border-radius: 25px;
   padding: 10px 0 10px 0;
 }
@@ -819,8 +828,7 @@
   padding: 0px 20px;
   position: relative;
   background-color: #ffffff;
-  margin-bottom: 15%;
-  margin-top: 15%;
+  z-index: 1;
 }
 
 .MAKERS-STORY .container {
@@ -950,7 +958,7 @@
   justify-content: center;
   gap: 10px;
   padding: 8px;
-  background-color: #5ed1da;
+  background-color: var(--primary-color);
   border-radius: 6px;
   display: flex;
   align-items: center;
