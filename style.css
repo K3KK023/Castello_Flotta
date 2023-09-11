@@ -3,10 +3,6 @@
 }
 
 
-.iubenda-tp-btn iubenda-cs-preferences-link{
-  display: none;
-}
-
 /* Navbar */
 .MAKERS-NAVIGATION {
   display: flex;
@@ -1036,3 +1032,5 @@ display: none;
 }
 
 }
+
+
