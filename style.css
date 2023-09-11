@@ -2,7 +2,6 @@
   --primary-color: #83bce2;
 }
 
-
 /* Navbar */
 .MAKERS-NAVIGATION {
   display: flex;
@@ -339,8 +338,11 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: fixed;
+  bottom: 0;
   background-color: #ffffff;
+  left: 0;
+  right: 0;
 }
 
 .MAKERS-FOOTER .container {
@@ -349,7 +351,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 12px 0px;
-  position: relative;
   flex: 0 0 auto;
 }
 
@@ -358,13 +359,11 @@
   width: 500px;
   align-items: center;
   gap: 16px;
-  position: relative;
   align-self: stretch;
   padding-left: 15px;
 }
 
 .MAKERS-FOOTER .text-wrapper {
-  position: relative;
   width: fit-content;
   font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
@@ -381,18 +380,16 @@
   align-items: center;
   justify-content: flex-end;
   gap: 24px;
-  position: relative;
   align-self: stretch;
   padding-right: 15px;
 }
 
 .MAKERS-FOOTER .MAKERS-SOCIAL-MEDIA {
-  position: relative;
   width: 24px;
   height: 24px;
 }
 
-.ppcptc{
+.ppcptc {
   display: flex;
   justify-content: space-evenly;
   gap: 2%;
@@ -497,13 +494,12 @@
 
 .MAKERS-MAIN .image-side {
   display: flex;
-  width: 65%;
+  width: 90%;
   height: 519px;
   align-items: center;
   justify-content: center;
   gap: 10px;
   position: relative;
-  margin-left: -50px;
 }
 
 .MAKERS-MAIN .image {
@@ -1033,4 +1029,191 @@ display: none;
 
 }
 
+/*PAGINA CONTATTI*/
+.contatti {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
+.contatti .intestazione {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px 10px;
+  padding: 0px 40px 40px;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+}
+
+.contatti .container {
+  align-items: flex-start;
+  padding: 100px 0px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.contatti .txt-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.contatti .titolo {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contatti .descrizione {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #0a2942;
+  font-size: 23px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 34.5px;
+}
+
+.contatti .cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0px 0px;
+  padding: 0px 0px 64px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.contatti .features-grid-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.contatti .features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px 16px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.contatti .media-objects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px 32px;
+  flex: 1;
+  flex-grow: 1;
+  align-items: center;
+  position: relative;
+}
+
+.contatti .media-container {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 200px;
+  gap: 10px;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px #0000001a;
+  align-items: center;
+  position: relative;
+}
+
+.contatti .MEDIA-OBJECT {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.contatti .media {
+  display: inline-flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+  flex: 0 0 auto;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  align-items: center;
+  position: relative;
+}
+
+.contatti .MEDIA-ICONS {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.contatti .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.contatti .text-wrapper {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.contatti .div {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #0a2942;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 27px;
+}
