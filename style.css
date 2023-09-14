@@ -927,6 +927,7 @@
   justify-content: center;
   gap: 0px 0px;
   position: relative;
+  flex-direction: column;
 }
 
 .MAKERS-FEATURES .content-wrapper {
@@ -934,7 +935,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 20px;
+  padding: 0px;
   position: relative;
   flex: 1;
   flex-grow: 1;
