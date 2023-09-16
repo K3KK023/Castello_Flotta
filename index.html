@@ -3,13 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Castello Flotta</title>
-    <link rel="stylesheet" href="style.css">
+    <title>castelloflotta</title>
+    <link rel="stylesheet" href="style_TEST.css">
     <link rel="icon" href="img/favicon/CFnbg.png" type="image/x-icon">
+        <!--Stylesheets-->
+        <style media="screen">
+            *,
+    *:before,
+    *:after{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .bgp{
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: 998;
+    }
+    .popup{
+        background-color: #ffffff;
+        padding: 35px 40px;
+        position: fixed;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+        border-radius: 75px;
+        font-family: "Poppins",sans-serif;
+        font-size: 23px;
+        display: none; 
+        text-align: center;
+        z-index: 999;
+    }
+    .popup button{
+        font-size: large;
+        display: block;
+        width: 150px;
+        position: relative;
+        margin: 10px auto;
+        text-align: center;
+        background-color: #83bce2;
+        border-radius: 20px;
+        color: blac;
+        text-decoration: none;
+        padding: 8px 0;
+    }
+    .warning-pu{
+        color: red;
+    }
+        </style>
+    
 </head>
+
 <body>
+
+<div class="bgp">
+    <div class="popup">
+        <h1 class="warning-pu">ATTENZIONE</h1>
+        <h2>Sito in manutenzione</h2>
+        <p>
+            Ci scusiamo per il disagio il sito è in manutenzione ma comunque funzionante, trascurate eventuali errori presenti.
+        </p>
+         <button id="close">Chiudi avviso</button>
+    </div>
+</div>    
+    <!--Script-->
+    <script type="text/javascript">
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        2000 
+    )
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+    </script>
+
+    <!--Script-->
+    <script type="text/javascript">
+        window.addEventListener("load", function(){
+            setTimeout(
+                function open(event){
+                    document.querySelector(".bgp").style.display = "block";
+                },
+                2000 
+            )
+        });
+        
+        
+        document.querySelector("#close").addEventListener("click", function(){
+            document.querySelector(".bgp").style.display = "none";
+        });
+            </script>
+
     <div class="MAKERS-NAVIGATION">
-        <div class="container">
             <div class="left">
                 <div class="icon">
                     <a href="index.html"><img src="img/CFnbg.png" alt="Logo"></a>
@@ -52,12 +145,14 @@
                         <!-- Primo MAKERS-MEDIA-OBJECT -->
                         <div class="MAKERS-MEDIA-OBJECT">
                             <div class="media">
+                                <a href="services.html">
                                 <img class="MAKERS-SOCIAL-MEDIA" src="img/icon/serv.png" />
+                                </a>
                             </div>
                             <div class="text">
                                 <div class="div">Servizi</div>
                                 <p class="p">Qui trovi le informazioni relative ai nostri servizi.</p>
-                                <div class="call-to-action">Mostra altro</div>
+                                <a href="services.html"><div class="call-to-action">Mostra altro</div></a>
                             </div>
                         </div>
                         <!-- Fine del primo MAKERS-MEDIA-OBJECT -->
@@ -65,7 +160,9 @@
                         <!-- Secondo MAKERS-MEDIA-OBJECT -->
                         <div class="MAKERS-MEDIA-OBJECT">
                             <div class="media">
-                                <a href="contact.html"><img class="MAKERS-SOCIAL-MEDIA" src="img/icon/cact.png" /></a>
+                                <a href="contact.html">
+                                <img class="MAKERS-SOCIAL-MEDIA" src="img/icon/cact.png" />
+                                </a>
                             </div>
                             <div class="text">
                                 <div class="div">Contattaci</div>
@@ -80,7 +177,9 @@
                         <!-- Terzo MAKERS-MEDIA-OBJECT -->
                         <div class="MAKERS-MEDIA-OBJECT">
                             <div class="media">
-                                <a href="galleria.html"><img class="MAKERS-SOCIAL-MEDIA" src="img/icon/ph.png" /></a>
+                                <a href="galleria.html">
+                                <img class="MAKERS-SOCIAL-MEDIA" src="img/icon/ph.png" />
+                            </a>
                             </div>
                             <div class="text">
                                 <div class="div">Galleria</div>
@@ -93,8 +192,10 @@
                         <!-- Quarto MAKERS-MEDIA-OBJECT -->
                         <div class="MAKERS-MEDIA-OBJECT">
                             <div class="media">
-                                <a href="recensioni.html"><img class="MAKERS-SOCIAL-MEDIA" src="img/icon/rece.png" /></a>
-                            </div>
+                                <a href="recensioni.html">
+                                <img class="MAKERS-SOCIAL-MEDIA" src="img/icon/rece.png" />
+                                </a>
+                            </div></a>
                             <div class="text">
                                 <div class="div">Recensioni</div>
                                 <p class="p">Trovi tutte le recensioni dei nostri clienti.</p>

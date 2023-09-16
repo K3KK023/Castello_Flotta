@@ -55,6 +55,7 @@
     flex: 0 0 auto;
     background-color: var(--primary-color);
     border-radius: 25px;
+    border: solid gold 1px;
     padding: 10px 0 10px 0;
   }
 
@@ -122,6 +123,7 @@
   background-size: cover;
   background-position: 50% 50%;
   border-radius: 25px;
+  border: solid gold 1px;
   margin: 4px;
 }
 
@@ -277,6 +279,7 @@
   flex: 0 0 auto;
   background-color: var(--primary-color);
   border-radius: 6px;
+  border: solid gold 1px;
 }
 
 .MAKERS-FEATURES .media img {
@@ -400,7 +403,7 @@
   flex-wrap: wrap;
 }
 
-/*tab*/
+/*tab###########################################################*/
 @media screen and (max-width: 1061px) {
 /* Navbar */
 .MAKERS-NAVIGATION {
@@ -582,14 +585,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 20px;
   position: relative;
   flex: 1;
   flex-grow: 1;
   margin-top: -20.5px;
   margin-bottom: -20.5px;
   background-color: #ffffff;
-  width: auto;
 }
 
 .MAKERS-FEATURES .content {
@@ -780,7 +781,7 @@
 
 }
 
-/*mobile*/
+/*mobile#######################################################*/
 @media screen and (max-width: 650px) {
   /* Navbar */
 .MAKERS-NAVIGATION {
@@ -995,7 +996,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-top: -37px;
+  margin-top: -90px;
 }
 
 .MAKERS-FEATURES .MAKERS-MEDIA-OBJECT {
@@ -1011,16 +1012,16 @@
 }
 
 .MAKERS-FEATURES .media {
+  display: flex;
   width: 100%;
-  height: 100px;
+  height: 198px;
+  align-items: center;
   justify-content: center;
   gap: 10px;
   padding: 8px;
+  position: relative;
   background-color: var(--primary-color);
   border-radius: 6px;
-  display: flex;
-  align-items: center;
-  position: relative;
 }
 
 .MAKERS-FEATURES .MAKERS-SOCIAL-MEDIA {
@@ -1292,4 +1293,110 @@ display: none;
   font-size: 18px;
   letter-spacing: 0;
   line-height: 27px;
+}
+
+/*sezione servizi*/
+.servizi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.servizi .intestazione {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 40px;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+}
+
+.servizi .titolo {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 52px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servizi .descrizione {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #0a2942;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 37.5px;
+}
+
+.servizi .cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px 40px;
+  padding: 23px;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+}
+
+.servizi .media-container {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+  height: 280px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 24px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px #0000001a;
+}
+
+.servizi .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.servizi .text-wrapper {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.servizi .div {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #0a2942;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
 }
