@@ -1,5 +1,6 @@
 :root {
   --primary-color: #83bce2;
+  --grey-color: rgb(54, 54, 54);
 }
 
 /* Navbar */
@@ -10,7 +11,9 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  background-color: #ffffff;
+  background-color: var( --grey-color);
+  border-radius: 0 0 15px 15px;
+  border: solid gold 1px 1px   ;
 }
 
 .MAKERS-NAVIGATION .container {
@@ -44,6 +47,7 @@
     padding: 0px 20px;
     position: relative;
     background-color: #ffffff;
+    margin-top: 25px;
 }
 
 .MAKERS-MAIN .container {
@@ -344,11 +348,12 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  background-color: #ffffff;
+  background-color: var( --grey-color);
   left: 0;
   right: 0;
   z-index: 999;
   bottom: 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .MAKERS-FOOTER .container {
@@ -412,7 +417,7 @@
   display: flex;
   gap: 0px 0px;
   position: relative;
-  background-color: #ffffff;
+  background-color: var( --grey-color);
 }
 
 .MAKERS-NAVIGATION .left {
@@ -718,7 +723,7 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  background-color: #ffffff;
+  background-color: var( --grey-color);
   left: 0;
   right: 0;
   bottom: 0;
@@ -788,7 +793,7 @@
   display: flex;
   gap: 0px 0px;
   position: relative;
-  background-color: #ffffff;
+  background-color: var( --grey-color);
 }
 
 .MAKERS-NAVIGATION .left {
@@ -955,14 +960,14 @@
 
 .MAKERS-FEATURES .features-grid {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 16px 16px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-  margin: auto;}
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    flex: 1 1 0%;
+    margin: auto;
+    flex-direction: row;
+  }
 
 .MAKERS-FEATURES .media-objects {
   display: flex;
@@ -989,11 +994,10 @@
 
 .MAKERS-FEATURES .div {
   flex-direction: column;
-  width: 340px;
   display: flex;
   align-items: center;
   position: relative;
-  margin-top: -90px;
+  margin-top: -70px;
 }
 
 .MAKERS-FEATURES .MAKERS-MEDIA-OBJECT {
@@ -1041,7 +1045,7 @@ display: none;
   align-items: center;
   justify-content: center;
   position: fixed;
-  background-color: #ffffff;
+  background-color: var( --grey-color);
   left: 0;
   right: 0;
   z-index: 999;
@@ -1396,67 +1400,4 @@ display: none;
   font-size: 24px;
   letter-spacing: 0;
   line-height: 36px;
-}
-
-
-/*Animazione menu*/
-.burger {
-  position: relative;
-  width: 40px;
-  height: 30px;
-  background: transparent;
-  cursor: pointer;
-  display: block;
-  margin: 25px;
-}
-
-.burger input {
-  display: none;
-}
-
-.burger span {
-  display: block;
-  position: absolute;
-  height: 4px;
-  width: 100%;
-  background: black;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
-
-.burger span:nth-of-type(1) {
-  top: 0px;
-  transform-origin: left center;
-}
-
-.burger span:nth-of-type(2) {
-  top: 50%;
-  transform: translateY(-50%);
-  transform-origin: left center;
-}
-
-.burger span:nth-of-type(3) {
-  top: 100%;
-  transform-origin: left center;
-  transform: translateY(-50%);
-}
-
-.burger input:checked ~ span:nth-of-type(1) {
-  top: 0;
-  left: 5px;
-  transform: rotate(405deg);
-}
-
-.burger input:checked ~ span:nth-of-type(2) {
-  width: 0%;
-  opacity: 0;
-}
-
-.burger input:checked ~ span:nth-of-type(3) {
-  top: 28px;
-  left: 5px;
-  transform: rotate(-405deg);
 }
