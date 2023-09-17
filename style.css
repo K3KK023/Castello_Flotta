@@ -3,6 +3,38 @@
   --grey-color: rgb(54, 54, 54);
 }
 
+body{
+  margin: 0%;
+}
+
+.menu {
+  display: flex;
+  font-family: monospace;
+  font-size: 1.5rem;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 2px solid #FAFAFA;
+  background: #252525;
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+  margin: 0 25px;
+  flex-direction: column;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+span{
+  margin: 3px;
+  background-color: #ffffff;
+  width: 25px;
+  height: 1px;
+}
+
 /* Navbar */
 .MAKERS-NAVIGATION {
   display: flex;
@@ -12,8 +44,7 @@
   justify-content: space-between;
   position: relative;
   background-color: var( --grey-color);
-  border-radius: 0 0 15px 15px;
-  border: solid gold 1px 1px   ;
+  border-bottom: solid gold 2px;
 }
 
 .MAKERS-NAVIGATION .container {
@@ -353,7 +384,6 @@
   right: 0;
   z-index: 999;
   bottom: 0;
-  border-radius: 15px 15px 0 0;
 }
 
 .MAKERS-FOOTER .container {
