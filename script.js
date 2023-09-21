@@ -1,5 +1,7 @@
+// Script footer
 function newFunction() {
-    type = "text/javascript"; src = "https://cs.iubenda.com/autoblocking/3304961.js"
+  type = "text/javascript";
+  src = "https://cs.iubenda.com/autoblocking/3304961.js";
 }
 
 function positionFooter() {
@@ -18,23 +20,43 @@ function positionFooter() {
 window.addEventListener("resize", positionFooter);
 window.addEventListener("load", positionFooter);
 
-
-
-// script.js
-document.addEventListener('DOMContentLoaded', function () {
-  const images = document.querySelectorAll('.media img');
-  const fullscreenImage = document.getElementById('fullscreen-image');
-  const fullscreenImg = document.getElementById('fullscreen-img');
-  const closeBtn = document.getElementById('close-btn');
+// script.js galleria
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".media img");
+  const fullscreenImage = document.getElementById("fullscreen-image");
+  const fullscreenImg = document.getElementById("fullscreen-img");
+  const closeBtn = document.getElementById("close-btn");
 
   images.forEach((img, index) => {
-      img.addEventListener('click', () => {
-          fullscreenImg.src = img.src;
-          fullscreenImage.style.display = 'block';
-      });
+    img.addEventListener("click", () => {
+      fullscreenImg.src = img.src;
+      fullscreenImage.style.display = "block";
+    });
   });
 
-  closeBtn.addEventListener('click', () => {
-      fullscreenImage.style.display = 'none';
+  closeBtn.addEventListener("click", () => {
+    fullscreenImage.style.display = "none";
   });
+});
+
+// Script pop up
+
+window.addEventListener("load", function () {
+  setTimeout(function open(event) {
+    document.querySelector(".popup").style.display = "block";
+  }, 2000);
+});
+
+document.querySelector("#close").addEventListener("click", function () {
+  document.querySelector(".popup").style.display = "none";
+});
+
+window.addEventListener("load", function () {
+  setTimeout(function open(event) {
+    document.querySelector(".bgp").style.display = "block";
+  }, 2000);
+});
+
+document.querySelector("#close").addEventListener("click", function () {
+  document.querySelector(".bgp").style.display = "none";
 });
