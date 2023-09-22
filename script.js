@@ -20,25 +20,6 @@ function positionFooter() {
 window.addEventListener("resize", positionFooter);
 window.addEventListener("load", positionFooter);
 
-// script.js galleria
-document.addEventListener("DOMContentLoaded", function () {
-  const images = document.querySelectorAll(".media img");
-  const fullscreenImage = document.getElementById("fullscreen-image");
-  const fullscreenImg = document.getElementById("fullscreen-img");
-  const closeBtn = document.getElementById("close-btn");
-
-  images.forEach((img, index) => {
-    img.addEventListener("click", () => {
-      fullscreenImg.src = img.src;
-      fullscreenImage.style.display = "block";
-    });
-  });
-
-  closeBtn.addEventListener("click", () => {
-    fullscreenImage.style.display = "none";
-  });
-});
-
 // Script pop up
 
 window.addEventListener("load", function () {

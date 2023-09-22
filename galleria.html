@@ -20,11 +20,18 @@
           </a>
         </div>
       </div>
-      <button class="menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <input type="checkbox" id="active" />
+      <label for="active" class="menu-btn"><span></span></label>
+      <label for="active" class="close"></label>
+      <div class="m-wrapper">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contatti</a></li>
+          <li><a href="services.html">Servizi</a></li>
+          <li><a href="galleria.html">Galleria</a></li>
+          <li><a href="recensioni.html">Reccensioni</a></li>
+        </ul>
+      </div>
     </div>
 
     <div class="g-foto">
@@ -280,13 +287,6 @@
       </div>
     </div>
 
-    <!-- Aggiungi un div per visualizzare l'immagine ingrandita -->
-    <div id="fullscreen-image" class="fullscreen-image">
-      <img id="fullscreen-img" src="" alt="Immagine a schermo intero" />
-      <span id="close-btn" class="close-btn">&times;</span>
-    </div>
-
-    <!-- Aggiungi uno script JavaScript per gestire l'ingrandimento delle immagini -->
     <script src="script.js"></script>
   </body>
 </html>
