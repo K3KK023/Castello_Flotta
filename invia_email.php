@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["azione"]) && $_POST["a
     $corpo .= "Domanda:\n$domanda";
 
     // Invia l'email
-    if (mail("fchiarelli93@gmail.com", $oggetto, $corpo)) {
+    if (mail("castelloflotta@gmail.com", $oggetto, $corpo)) {
         echo "Email inviata con successo!";
     } else {
         echo "Errore nell'invio dell'email.";
