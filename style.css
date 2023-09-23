@@ -1773,6 +1773,6 @@ input[type="submit"]:hover {
     padding: 8px 0;
   }
   .warning-pu {
-    color: red;
+    color: blue;
   }
 }
