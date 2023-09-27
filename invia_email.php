@@ -1,8 +1,8 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["azione"]) && $_POST["azione"] == "invia_email") {
-    $nome = $_POST["nome"];
-    $email = $_POST["email"];
-    $domanda = $_POST["domanda"];
+if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["azione"]) && $_GET["azione"] == "invia_email") {
+    $nome = $_GET["nome"];
+    $email = $_GET["email"];
+    $domanda = $_GET["domanda"];
 
     // Configura l'oggetto e il corpo dell'email
     $oggetto = "Domanda da $nome";
