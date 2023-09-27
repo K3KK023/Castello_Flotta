@@ -1238,27 +1238,15 @@ input[type="checkbox"] {
 }
 
 /*PAGINA CONTATTI*/
-h2 form {
+h2 {
   color: #333;
-}
-
-.form-c {
-  display: flex;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 form {
   text-align: start;
   background-color: #fff;
   border: 1px solid #ccc;
-  max-width: 700px;
+  max-width: -webkit-fill-available;
   margin: 15px;
   padding: 20px;
   border-radius: 5px;
@@ -1273,6 +1261,7 @@ textarea {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  max-width: -webkit-fill-available;
 }
 
 input[type="submit"] {
