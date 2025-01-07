@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Castello Flotta</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="img/CFnbg.png" type="image/x-icon">
-    <script type="text/javascript">
-        var _iub = _iub || [];
-        _iub.csConfiguration = {"askConsentAtCookiePolicyUpdate":true,"enableFadp":true,"enableLgpd":true,"enableUspr":false,"fadpApplies":true,"floatingPreferencesButtonCaptionColor":"#000000","floatingPreferencesButtonColor":"#E50505","floatingPreferencesButtonDisplay":"none","perPurposeConsent":true,"preferenceCookie":{"expireAfter":180},"siteId":3304961,"usprApplies":true,"whitelabel":false,"cookiePolicyId":80411806,"lang":"it", "banner":{ "acceptButtonDisplay":true,"backgroundOverlay":true,"closeButtonDisplay":false,"customizeButtonDisplay":false,"explicitWithdrawal":true,"listPurposes":true,"ownerName":"castelloflotta.com","position":"float-center","rejectButtonDisplay":true,"showPurposesToggles":true,"showTotalNumberOfProviders":true, "reopenAfterConsentGiven": false }};
-        </script>
-        <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3304961.js"></script>
-        <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
-        <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
-</head>
-<body>
-    <header>
-        <div class="header-content">
-            <h1>Castello Flotta</h1>
-            <nav>
-                <ul>
-                    <li><a href="#chi-siamo">Chi Siamo</a></li>
-                    <li><a href="#servizi">Servizi</a></li>
-                    <li><a href="#galleria">Galleria</a></li>
-                    <li><a href="#contatti">Contatti</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Castello Flotta</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="img/CFnbg.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <h1>Castello Flotta</h1>
+                <nav>
+                    <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+                    <ul>
+                        <li><a href="#chi-siamo">Chi Siamo</a></li>
+                        <li><a href="#servizi">Servizi</a></li>
+                        <li><a href="#galleria">Galleria</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>    
 
     <main>
         <section id="chi-siamo">
@@ -36,23 +30,23 @@
         </section>
 
         <section id="servizi">
-            <h2>Servizi</h2>
+            <h2>Servizi Offerti</h2>
             <div class="servizi-list">
                 <div class="servizio-item">
-                    <img src="IMG/image4.jpg" alt="Matrimonio">
+                    <img src="IMG/image4.jpg" alt="Organizzazione di matrimoni in una sala elegante">
                     <h3>Organizzazione matrimoni</h3>
                 </div>
                 <div class="servizio-item">
-                    <img src="IMG/image32.jpg" alt="Compleanno">
+                    <img src="IMG/image32.jpg" alt="Feste di compleanno con catering personalizzato">
                     <h3>Feste di compleanno</h3>
                 </div>
                 <div class="servizio-item">
-                    <img src="IMG/image6.jpg" alt="Catering">
+                    <img src="IMG/image6.jpg" alt="Servizio di catering personalizzato per ogni evento">
                     <h3>Catering personalizzato</h3>
                 </div>
             </div>
         </section>
-
+        
         <section id="galleria">
             <h2>Galleria</h2>
             <div class="gallery">
@@ -66,9 +60,9 @@
 
         <section id="contatti">
             <h2>Contatti</h2>
-            <p>Per maggiori informazioni o per prenotare il nostro castello,<br>contattaci al numero fisso <a href="tel:098390899"><strong>0983 90899</strong></a>,<br> Tramite messaggio via whatsapp <a href="https://api.whatsapp.com/send?phone=+393319096097&amp;text=Ciao,%20vorrei%20inviarti%20un%20messaggio"><strong>+39&nbsp;331&nbsp;909&nbsp;6097</strong></a> <br>oppure se preferisci inviaci un'email a <a href="mailto:castelloflotta@gmail.com"><strong>castelloflotta@gmail.com</strong></a>.</p>
+            <p>Per maggiori informazioni o per prenotare il nostro castello,<br>contattaci al numero fisso <a href="tel:098390899"><strong>0983 90899</strong></a>,<br> Tramite messaggio via whatsapp <a href="https://api.whatsapp.com/send?phone=+393319096097&amp;text=Ciao,%20vorrei%20inviarti%20un%20messaggio"><strong>+39&nbsp;331&nbsp;909&nbsp;6097</strong></a><br>oppure se preferisci inviaci un'email a <a href="mailto:castelloflotta@gmail.com"><strong>castelloflotta@gmail.com</strong></a>.</p>
         </section>
-    </main>
+            </main>
 
     <footer>
         <p>&copy; 2024 Castello Flotta. Tutti i diritti riservati.</p>
@@ -77,5 +71,37 @@
         <a href="https://www.iubenda.com/termini-e-condizioni/80411806" class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Termini e Condizioni ">Termini e Condizioni</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
     </footer>   
 
+    <script>
+        // Funzione per aprire/chiudere il menu
+        function toggleMenu() {
+            var nav = document.querySelector('header nav');
+            nav.classList.toggle('active');
+        }
+    
+        // Aggiungere un event listener per chiudere il menu quando una voce del menu viene cliccata
+        const menuLinks = document.querySelectorAll('header nav ul li a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                const nav = document.querySelector('header nav');
+                nav.classList.remove('active'); // Chiude il menu
+            });
+        });
+    
+        // Aggiungere un listener per chiudere il menu quando si clicca fuori dal menu
+        document.body.addEventListener('click', function(event) {
+            const nav = document.querySelector('header nav');
+            const menuBtn = document.querySelector('.menu-btn');
+            // Verifica se il clic è avvenuto fuori dal menu o dal bottone del menu
+            if (!nav.contains(event.target) && !menuBtn.contains(event.target)) {
+                nav.classList.remove('active'); // Chiude il menu
+            }
+        });
+    
+        // Prevenire il clic sul menu o sul bottone hamburger di propagarsi (così non chiude il menu)
+        document.querySelector('header nav').addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+    </script>
+            
 </body>
 </html>
