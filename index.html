@@ -10,7 +10,7 @@
     <body>
         <header>
             <div class="header-content">
-                <h1>Castello Flotta</h1>
+                <a href="#"><h1>Castello Flotta</h1></a>
                 <nav>
                     <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
                     <ul>
@@ -72,32 +72,27 @@
     </footer>   
 
     <script>
-        // Funzione per aprire/chiudere il menu
         function toggleMenu() {
             var nav = document.querySelector('header nav');
             nav.classList.toggle('active');
         }
     
-        // Aggiungere un event listener per chiudere il menu quando una voce del menu viene cliccata
         const menuLinks = document.querySelectorAll('header nav ul li a');
         menuLinks.forEach(link => {
             link.addEventListener('click', function() {
                 const nav = document.querySelector('header nav');
-                nav.classList.remove('active'); // Chiude il menu
+                nav.classList.remove('active');
             });
         });
     
-        // Aggiungere un listener per chiudere il menu quando si clicca fuori dal menu
         document.body.addEventListener('click', function(event) {
             const nav = document.querySelector('header nav');
             const menuBtn = document.querySelector('.menu-btn');
-            // Verifica se il clic è avvenuto fuori dal menu o dal bottone del menu
             if (!nav.contains(event.target) && !menuBtn.contains(event.target)) {
-                nav.classList.remove('active'); // Chiude il menu
+                nav.classList.remove('active');
             }
         });
     
-        // Prevenire il clic sul menu o sul bottone hamburger di propagarsi (così non chiude il menu)
         document.querySelector('header nav').addEventListener('click', function(event) {
             event.stopPropagation();
         });
