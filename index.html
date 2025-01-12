@@ -5,12 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Castello Flotta</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="img/CFnbg.png" type="image/x-icon">
+        <link rel="icon" href="IMG/CFnbg.png" type="image/x-icon">
     </head>
     <body>
         <header>
             <div class="header-content">
-                <a href="#"><h1>Castello Flotta</h1></a>
+                <div class="logo-title">
+                    <a href="https://castelloflotta.com/" class="logo">
+                        <img src="IMG/CFnbg.png" alt="Logo Castello Flotta">
+                    </a>
+                    <h1 class="immune">
+                        <a href="https://castelloflotta.com/">Castello Flotta</a>
+                    </h1>
+                </div>
                 <nav>
                     <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
                     <ul>
@@ -21,7 +28,8 @@
                     </ul>
                 </nav>
             </div>
-        </header>    
+        </header>
+            
 
     <main>
         <section id="chi-siamo">
@@ -96,6 +104,7 @@
         document.querySelector('header nav').addEventListener('click', function(event) {
             event.stopPropagation();
         });
+        
     </script>
             
 </body>
